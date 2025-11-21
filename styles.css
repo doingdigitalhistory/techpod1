@@ -1,4 +1,5 @@
 /* Reset and Base Styles */
+* /* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -437,10 +438,11 @@ blockquote {
     box-shadow: 0 6px 20px rgba(27, 67, 50, 0.12);
     margin-bottom: 2.5rem;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 220px 1fr;
     gap: 3rem;
     border: 1px solid rgba(64, 145, 108, 0.15);
     transition: all 0.3s ease;
+    align-items: start;
 }
 
 .author-card:hover {
@@ -448,9 +450,29 @@ blockquote {
     transform: translateY(-2px);
 }
 
+.author-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.author-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #95d5b2;
+    box-shadow: 0 4px 12px rgba(27, 67, 50, 0.2);
+}
+
+.author-info {
+    min-width: 0;
+}
+
 .author-info h2 {
     color: #1b4332;
     margin-bottom: 0.5rem;
+    font-size: 1.8rem;
 }
 
 .author-title {
